@@ -1,2 +1,2 @@
 # Website
-A website on Kerala Sahitya akademi Thrissur 
+A website project on Kerala Sahitya akademi Thrissur.
