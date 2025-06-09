@@ -1,0 +1,251 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerala Sahitya Academi Thissur</title>
+    <link rel="stylesheet" href="signup.css">
+    <script src="js/Javascript.js"></script>
+</head>
+<body>
+  <header>
+            
+    <div class="content"></div>
+      <section class="adjust">
+        
+    
+       <div class="logofile"><img src="datas/download (4).png" style="width:35%; margin-top: 2%;"></div>
+        <div class="list">
+       
+          <a class="lin" href="index.html">Home</a>
+          <a class="lin" href="about .html">About</a>
+          <a class="lin" href="contact.html">Contact</a>
+          <a class="active" href="signup.html">signup</a>
+          <a class="lin" href="library.html">Library</a>
+</div> 
+          
+    
+          
+          
+<span style="font-size:30px;cursor:pointer" class="hamgroup" onclick="openNav()">&#9776;</span>
+        
+            
+ 
+        
+         
+        
+        
+        
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a  href="index.html">Home</a>
+  <a  href="about .html">About</a>
+  <a href="contact.html">Contact</a>
+  <a  href="signup.html">Signup</a>
+  <a href="library.html">Library</a>
+  </div>
+  </div>
+   
+  
+</div>
+    </header>
+  
+  <script>
+function openNav() {
+document.getElementById("myNav").style.width = "30%";
+}
+
+function closeNav() {
+document.getElementById("myNav").style.width = "0%";
+}
+</script>
+<script src="js/Javascript.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".content").css({"opacity" : "0"});
+        $(".lin").css({"color" : " #1c0c0c"});
+        $(".hamgroup").css({"color" : " #1c0c0c"});
+        $(window).scroll(function(){
+      if($(this).scrollTop() > 20){
+        $(".content").css({"opacity" : "9"});
+        $(".lin").css({"color" : "white"});
+        $(".active").css({"background-color" : "#f45900"});
+        $(".active").css({"color" : "white"});
+        $(".hamgroup").css({"color" : "white"});
+        
+      }
+      else {
+        $(".content").css({"opacity" : "0"});
+        $(".lin").css({"color" : " #1c0c0c"});
+        $(".active").css({"background-color" : "#f45900"});
+        $(".active").css({"color" : "white"});
+        $(".hamgroup").css({"color" : " #1c0c0c"});
+        
+      }
+    });
+
+    $('.lhelp').click(function(){
+      alert('Fill out the coloumn with the same username and password that you entered when registering in kerala sahitya academy');
+    });
+
+    $('.lhelp1').click(function(){
+      alert('Fill out the coloumn with your name, email and set a suitable password and confirm it in the next coloumn of confirm password. Click REGISTER to register in Kerala sahitya academy');
+    });
+    });
+  </script>
+<script src="js/Javascript.js"></script>
+<script>
+$('document').ready(function(){
+  $('.word2,.link2,.reg').hide();
+
+  $('.link1').click(function(){
+    $('.word1,.link1,.log').hide();
+    $('.word2,.link2,.reg').show();
+  });
+
+  $('.link2').click(function(){
+    $('.word1,.link1,.log').show();
+    $('.word2,.link2,.reg').hide();
+  });
+
+});
+
+
+</script>
+
+<div class="bg"><img src="datas/ksa1 - Copykk.png"></div>
+
+<section id="signup">
+
+
+
+<div class="left">
+
+<img class="pic1" src="datas/signin.jpg">
+<img class="pic2" src="datas/iconman.png">
+<h1 class="word1">Do You Have <br>An Account?</h1><br><br><br><br><br><br>
+<a class="link1" title="register now" href="#">REGISTER</a>
+<h1 class="word2">Are You One<br> Of Us?</h1><br><br><br><br><br><br>
+<a class="link2" title="login now" href="#">LOGIN</a>
+
+</div>
+
+
+<div class="form">
+
+<div class="log">
+<h1 style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; margin-left: 23%; color: #f45900;">LOGIN</h1><br>
+<form action="#" method="get">
+<input type="text" name="Username" placeholder="User Name" required><br><br><br>
+<input type="password" placeholder="password" required>
+<ul>
+  <li><a class="lhelp" href="#">Help</a></li>
+<input style="margin-left: 35%; width:50px; border: none; background-color: white; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 16px;" class="lForgot"  type="reset" value="Clear">
+</ul><div class="login">
+<input type="submit" title="login now" value="LOGIN">
+</div>
+</form>
+
+
+<br>
+<br> 
+<br>
+
+</div>
+
+<div class="reg">
+<h1 style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; margin-left: 23%; color: #f45900;">REGISTER</h1><br>
+<form action="#" method="get">
+  <input type="text" placeholder="name (Username)" required="impo"><br><br><br>
+  <input type="email" placeholder="Email" required><br><br><br>
+  <input type="password" placeholder="password" required><br><br><br>
+  <input type="password" placeholder="Confirm password" required>
+  <ul>
+    <li><a class="lhelp1" href="#">Help</a></li>
+    <input style="margin-left: 35%; width:50px; border: none; background-color: white; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 16px;" class="lForgot"  type="reset" value="Clear">
+    
+    </ul><br>
+  <div class="register">
+    <input type="submit" title="register now" value="REGISTER">
+    </div>
+</form>
+
+
+  
+
+
+</div>
+
+</div>
+
+
+</section>
+
+
+<br>
+
+
+<footer>
+    
+    <div class="location">
+  
+    <div class="locations locate">
+    <h4>Locate Us</h4>
+    <p>Kerala Sahitya Academy, Town Hall Rd, Chembukkav,<br> Thrissur, Kerala 680005</p><br>
+    <a href="https://maps.app.goo.gl/6xUQcjBW8rcYz3X1A" target="_blank">Locate</a>
+  </div>
+  
+  <div class="locate"><a href="https://maps.app.goo.gl/6xUQcjBW8rcYz3X1A" target="_blank"><img src="datas/location.jpg"></a></div>
+  
+  </div>
+  
+  <div class="last">
+  
+  <div class="maininfo info">
+    <div class="contacts1">
+        <div>
+  <h4>Contact</h4>
+  <a href="tel:8967453827" target="_blank" style="text-decoration: none; color: aliceblue;">
+  <img src="datas/download (1).png" style="width: 15px; padding-top: 7.5%;" class="element">
+  <p class="element" style="float: right; padding-right: 60%;">8967453827</p></a></div>
+  
+  <div>
+    <a href="mailto:keralasahityaakademi@gmail.com." target="_blank" style="text-decoration: none; color: aliceblue;">
+  <img src="datas/download.png"  style=" width: 20px; margin-top: 11%;" class="element1">
+  <p class="element1" style="float: left; margin-left: 10px; ">keralasahithyaacademi@gmail.com</p></div>
+  </a>
+    </div>
+  
+    
+    <div class="contacts2">
+  
+        <h4>Schedule</h4>
+        <p>Monday - Saturday</p>
+        <p>Time : 9am - 6pm</p>
+        
+            </div>
+  </div>
+  
+  
+  
+  <div class="follow info" style="text-align: center;">
+  <h2 style="color: aliceblue;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Follow Us</h2>
+  <p style="color: aliceblue;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Follow Us Through Our Social Media Platforms!</p>
+  <a href="https://m.facebook.com/profile.php?id=111213272263467" target="_blank"><img src="datas/tytyt.png" style="width: 5%; margin-right: 1%;" ></a>
+  <a href="https://www.youtube.com/c/keralasahityaacademythrissur" target="_blank"><img src="datas/o.png" style="width: 5%; margin-right: 1%;"></a>
+  <a href="mailto:keralasahityaakademi@gmail.com." target="_blank"><img src="datas/download.png" style="width: 5.4%;"></a>
+  </div>
+  
+  <div class="recent info" style="text-align: center;">
+    <h2 style="color: aliceblue; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Access Links</h2>
+    <a href="library.html">Library</a><br><br>
+    <a href="signup.html">Signup</a><br><br>
+    <a href="contact.html">Contact Us</a><br><br>
+    <a href="about .html">About Us</a><br><br>
+  </div>
+  
+  </div>
+  
+  </footer>
+  </body>
+  </html>
